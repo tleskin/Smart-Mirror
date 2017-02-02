@@ -15,3 +15,15 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+
+  setInterval(function() {
+    var currentTime = new Date();
+    $('.clock .hours').html(currentTime.getHours())
+    $('.clock .minutes').html(currentTime.getMinutes())
+    $('.clock .seconds').html(currentTime.getSeconds())
+    // Also show the day/month/year
+  }, 501)
+
+})

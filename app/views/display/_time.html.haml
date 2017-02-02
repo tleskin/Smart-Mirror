@@ -1,0 +1,10 @@
+.col-xs-4.grid-bottom.mirrorbox.clock
+  %h3.time.pull-right
+    .hours
+    .minutes
+    .seconds
+  %h3.date
+    -# = Time.now.strftime("%A")
+    -# ,
+    -# = Time.now.strftime("%b")
+    -# = Time.now.strftime("%d")
