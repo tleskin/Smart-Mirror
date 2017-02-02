@@ -1,7 +1,12 @@
 .col-xs-4.grid-top.mirrorbox
-  %h1
-    %i.fa.fa-cloud.fa-5x.pull-right
-  %h3.pull-right
+  %h1.weather-icon
+    %i.wi.pull-right{class: "wi-owm-#{@weather_icon_code}"}
+  %h4.location.pull-right
+    = @current_location
+    \,
+    FL
+  %h3.weather.pull-right
     = @current_condtion
     \/
     = @current_temp
+    %i.wi.wi-fahrenheit
