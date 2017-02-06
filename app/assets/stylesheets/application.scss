@@ -19,9 +19,9 @@
 @import 'bootstrap-social';
 
 .mirrorbox {
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
+  // border-style: solid;
+  // border-width: 1px;
+  // border-color: gray;
   height: 19.5vh;
   width: 32.5vw;
 }
@@ -38,10 +38,14 @@
   margin-top: 0px;
 }
 
+.forecast {
+  padding-top: 50px;
+}
+
 .bottom {
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
+  // border-style: solid;
+  // border-width: 1px;
+  // border-color: gray;
   text-align: center;
   font-size: 120%;
 }
@@ -69,4 +73,24 @@
 
 .box2 {
   padding-top: 50px;
+}
+
+.navv {
+  background-color: gray;
+  height: 100vh;
+  .nav {
+    margin-top: 20px;
+  }
+  li {
+    margin-top: 40px;
+  }
+}
+
+.admin {
+  background-color: white;
+  height: 100vh;
+}
+
+.box {
+  margin-top: 200px;
 }

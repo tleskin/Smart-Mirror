@@ -18,42 +18,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .col-xs-2.navv
-      .navmenu.navmenu-default.navmenu-fixed-left.offcanvas-sm
-        %ul.nav.navmenu-nav
-          %li
-            = link_to "/display/index" do
-              %span.glyphicon.glyphicon-modal-window
-              Screen
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-time
-              Date/Time
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-calendar
-              Calendar
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-cloud
-              Weather
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-camera
-              Photos
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-globe
-              News
-          %li
-            = link_to "#" do
-              %span.glyphicon.glyphicon-check
-              To-Do Lists
-        %ul.nav.navmenu-nav
-          %li
-            = link_to "#" do
-              My Displays
-    .col-xs-10.admin
+    .container
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do
           %button.close{type: "button", data: {dismiss: "alert"} }

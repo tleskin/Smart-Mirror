@@ -1,7 +1,7 @@
-.col-xs-4.grid.mirrorbox
+.col-xs-4.grid.mirrorbox.forecast
   %h2 Forecast
-  %h5
-    = @forecast_city
+  -# %h5
+  -#   = @forecast_city
   %h4
     %i.wi{class: "wi-owm-#{@next_day_icon}"}
     = (Time.now + 1.days).strftime("%A").slice(0..2)

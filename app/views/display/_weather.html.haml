@@ -1,11 +1,11 @@
 .col-xs-4.grid-top.mirrorbox
   %h1.weather-icon
-    %i.wi.pull-right{class: "wi-owm-#{@weather_icon_code}"}
-  %h4.location.pull-right
+    %i.wi{class: "wi-owm-#{@weather_icon_code}"}
+  %h4.location
     = @current_location
     \,
     FL
-  %h3.weather.pull-right
+  %h3.weather
     = @current_condtion
     \/
     = @current_temp
