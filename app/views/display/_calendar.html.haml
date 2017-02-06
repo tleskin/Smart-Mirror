@@ -1,6 +1,10 @@
-.col-xs-4.grid.mirrorbox
+.col-xs-4.grid.mirrorbox.calendar
   %h3 Calendar
-  %h4 •  Thing 1
-  %h4 •  Thing 2
-  %h4 •  Thing 3
-  %h4 •  Thing 4
+  - @calendar_events.take(5).each do |event|
+    %h4
+      •
+      = event.start.date_time.to_s.split('T').first.split('-')[1]
+      \/
+      = event.start.date_time.to_s.split('T').first.split('-')[2]
+      \-
+      = event.summary
