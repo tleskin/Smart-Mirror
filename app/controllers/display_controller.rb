@@ -33,9 +33,7 @@ class DisplayController < ApplicationController
       item
     end
 
-    # calendar_times = calendar.items.map do |item|
-    #   time = item.start.date_time
-    # end
+    @headlines = TopHeadlines::Source.scrape_headlines("NYTIMES").select { |story| story.length < 30 }
 
   end
 

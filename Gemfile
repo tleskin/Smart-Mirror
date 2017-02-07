@@ -33,6 +33,9 @@ gem "httparty"
 # Google API
 gem "google-api-client"
 
+# News headlines
+gem 'top-headlines'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -62,6 +65,7 @@ gem 'jquery-ui-rails'
 gem 'haml-rails'
 group :development do
   gem 'dotenv-rails'
+  gem 'awesome_print'
 end
 
 group :production do
